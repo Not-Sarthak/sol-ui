@@ -45,7 +45,7 @@ export function ComponentPreview({
     }
 
     return <Component />;
-  }, [name, key]);
+  }, [name]);
 
   return (
     <div
