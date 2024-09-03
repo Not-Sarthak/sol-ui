@@ -90,5 +90,16 @@ export const docsConfig: DocsConfig = {
         },
       ],
     },
+    {
+      title: "Blinks",
+      items: [
+        {
+          title: "Blinks Starter",
+          href: `/docs/blinks/blinks-starter`,
+          items: [],
+          label: "New",
+        },
+      ],
+    },
   ],
 };

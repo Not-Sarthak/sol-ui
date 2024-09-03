@@ -38,6 +38,16 @@ const ui: Registry = {
     type: "components:solui",
     files: ["registry/components/solui/swap-ui.tsx"],
   },
+  "blinks": {
+    name: "blinks",
+    type: "components:solui",
+    files: ["registry/components/solui/blinks/blinks.ts"],
+  },
+  "actions": {
+    name: "actions",
+    type: "components:solui",
+    files: ["registry/components/solui/blinks/actions.ts"],
+  },
 };
 
 const example: Registry = {
@@ -102,6 +112,15 @@ const example: Registry = {
     files: ["registry/components/example/swap-ui-demo.tsx"],
     component: React.lazy(
       () => import("@/registry/components/example/swap-ui-demo"),
+    ),
+  },
+  "blinks-demo": {
+    name: "blinks-demo",
+    type: "components:example",
+    registryDependencies: ["blinks-demo"],
+    files: ["registry/components/example/blinks-demo.tsx"],
+    component: React.lazy(
+      () => import("@/registry/components/example/blinks-demo"),
     ),
   },
 };

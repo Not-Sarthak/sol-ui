@@ -1,0 +1,65 @@
+---
+title: Blinks Starter
+date: 2024-08-30
+description: A component to showcase all the elements that can be added to a Blink
+author: sarthak
+published: true
+video: https://cdn.solui.design/priority-modal.mp4
+---
+
+<ComponentPreview name="blinks-demo" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+Coming Soon! 🫡
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Create a new Next.js app:</Step>
+
+```bash
+npx create-next-app@latest solana-blinks --ts
+cd solana-blinks
+pnpm i
+```
+
+Setup the Project Structure as shown below:
+```bash
+/solana-blinks
+  /src
+    /app
+      /api
+        /donate
+          route.ts
+      /actions.json
+           route.ts
+  /public
+    /images
+      icon.png
+  next.config.js
+```
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="blinks" />
+
+<Step>Update the API routes inside actions.json</Step>
+
+<ComponentSource name="actions" />
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
