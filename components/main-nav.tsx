@@ -8,7 +8,6 @@ import posthog from "posthog-js";
 import { docsConfig } from "@/config/docs";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
 import { Icons } from "@/components/icons";
 
 export function MainNav() {
